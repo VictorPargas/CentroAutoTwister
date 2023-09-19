@@ -215,3 +215,47 @@
 footer.site-footer {
     margin-top: 20px; /* Margem superior para a footer */
 }
+
+
+/* Estilos padrão para os cards */
+.card {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+}
+
+/* Estilos para telas menores que 768px (dispositivos móveis) */
+@media (max-width: 768px) {
+    .card {
+        flex-basis: 100%;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+}
+
+/* Estilos para telas menores que 992px (tablets em orientação retrato) */
+@media (max-width: 992px) {
+    .card-title {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header-text {
+        font-size: 30px;
+        padding: 5px;
+        white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    }
+
+    .custom-btn {
+        padding: 5px 15px;
+        font-size: 16px;
+    }
+}
+
+
