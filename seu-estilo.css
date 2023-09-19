@@ -54,13 +54,14 @@
 .header-text {
     color: white;
     text-transform: uppercase;
-    white-space: nowrap;
+    white-space: normal;
     font-size: 40px;
     margin-top: 20px; /* Altere o valor para ajustar a posição vertical */
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Aumente os valores para aumentar a sombra */
     padding: 20px; /* Aumente o valor para aumentar o espaçamento interno */
     border: none; /* Remova a borda */
     border-radius: 20px; /* Adicione um contorno maior */
+    word-wrap: break-word;
 }
 
 .custom-btn a {
@@ -255,6 +256,16 @@ footer.site-footer {
     .custom-btn {
         padding: 5px 15px;
         font-size: 16px;
+    }
+}
+
+/* Estilo para telas menores, como dispositivos móveis */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 10px;
+        right: 10px;
+        padding: 5px 10px;
+        font-size: 14px;
     }
 }
 
