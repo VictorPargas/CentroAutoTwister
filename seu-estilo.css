@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    font: inherit;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: inherit;
+    font-weight: 300;
+}
+
+
+/* Estilo da header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo semi-transparente */
+    transition: background-color 0.3s; /* Transição suave de cor */
+}
+
+/* Estilo da header após a rolagem */
+.header.scroll {
+    background-color: #222; /* Cor de fundo quando a página é rolada */
+}
+
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: black; /* Cor de fundo quando a header é rolada */
+}
+
+
+
+
+.header-background {
+    background-image: url('/pexels-mídia-4116193.jpg'); /* Substitua 'caminho-da-imagem.jpg' pelo caminho da sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Defina a altura da header conforme necessário */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-text {
+    color: white;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 40px;
+    margin-top: 20px; /* Altere o valor para ajustar a posição vertical */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Aumente os valores para aumentar a sombra */
+    padding: 20px; /* Aumente o valor para aumentar o espaçamento interno */
+    border: none; /* Remova a borda */
+    border-radius: 20px; /* Adicione um contorno maior */
+}
+
+.custom-btn a {
+    color: white;
+    border: none;
+}
+
+/* CSS para o efeito hover nos cards */
+.card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do card */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil */
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.fancy-title {
+    position: relative;
+    height: 140px;
+    margin-bottom: 15px;
+}
+
+.fancy-title span {
+    position: absolute;
+    display: block;
+    width: 1000px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -500px;
+    line-height: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 100px;
+    overflow: hidden;
+    font-weight: 900;
+    color: rgba(252, 252, 252, 0.671);
+    letter-spacing: -3px;
+}
+
+.fancy-title h1 {
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-weight: 300;
+    color: white;
+}
+
+.ohio-client-logo-sc.client-logo:hover .client-logo-img img {
+    transform: scale(1.2); /* Aumenta o tamanho do logotipo quando hover */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.ohio-client-logo-sc.client-logo {
+    display: inline-block; /* Faz com que os logotipos fiquem lado a lado */
+    margin-right: 20px; /* Espaçamento entre os logotipos (ajuste conforme necessário) */
+}
+
+
+/* Estilo para a classe logo-container */
+.logo-container {
+    display: inline-block; /* Para tornar os logotipos lado a lado */
+    margin-right: 20px;    /* Espaçamento entre logotipos (ajuste conforme necessário) */
+}
+
+/* Estilo para as imagens dos logotipos (opcional) */
+.logo-container img {
+    max-width: 100%; /* Para garantir que as imagens não ultrapassem o contêiner */
+}
+
+
+/* Estilo para o botão flutuante do WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    border-radius: 50px;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Certifique-se de que o botão esteja acima de outros elementos */
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Ícone do WhatsApp */
+.whatsapp-float i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Efeito de hover */
+.whatsapp-float:hover {
+    background-color: #128C7E; /* Cor de fundo quando o mouse passa por cima */
+}
+
+
+
+
+.page-footer {
+    background: #333;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+
+
+.site-footer .page-container+.site-info .site-info-holder {
+    border-top: 1px solid rgba(136,136,136,.1);
+}
+
+.site-footer .site-info-holder {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.page-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.site-footer .site-info {
+    background-color: #1a191d;
+}
+
+.site-footer .site-info {
+    font-size: .94rem;
+}
+
+.site-footer .widgets {
+    padding: 90px 0;
+    list-style: none;
+}
+
+
+.main-content {
+  margin-top: 100px; /* Margem ao redor do conteúdo principal */
+    padding: 20px; /* Preenchimento interno do conteúdo principal (opcional) */
+}
+
+footer.site-footer {
+    margin-top: 20px; /* Margem superior para a footer */
+}
